@@ -4,6 +4,6 @@
   "name": "Runway Bag",
   "version": "0.1.0",
   "api_version": "27.12.0",
-  "description": "Runway Bag",
+  "description": "Pack a trip by context and keep a separate final departure list for items still in use.",
   "author": "ncoooooper"
 }

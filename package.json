@@ -2,7 +2,7 @@
   "name": "busybar-runway-bag",
   "private": true,
   "version": "0.1.0",
-  "description": "Runway Bag",
+  "description": "Pack a trip by context and keep a separate final departure list for items still in use.",
   "author": "ncoooooper",
   "type": "module",
   "scripts": {
