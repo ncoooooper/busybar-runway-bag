@@ -5,7 +5,7 @@ type S={trip:number;at:number;late:boolean;packed:string[];door:string[]};
 const code=(s:S,t:string)=>s.trip+"/"+t;
 const visible=(s:S)=>lists[s.trip].filter(t=>!s.late||s.door.includes(code(s,t)));
 function toggle(a:string[],t:string){const n=a.indexOf(t);if(n>=0)a.splice(n,1);else a.push(t);}
-desk<S>({name:"Runway Bag",accent:"#ED8B86",motion:{"motif":"bookmark","color":"#ED8B86","shine":"#FFF0DB"},initial:()=>({trip:0,at:0,late:false,packed:[],door:[]}),configure:(s,v)=>{for(const [i,k] of ["city","trail"].entries()){const a=String(v[k]||"").split(",").map(x=>x.trim()).filter(Boolean).slice(0,12);if(a.length)lists[i]=a;}s.at=0;},
+desk<S>({name:"Runway Bag",accent:"#ED8B86",motion:{enabled:false},initial:()=>({trip:0,at:0,late:false,packed:[],door:[]}),configure:(s,v)=>{for(const [i,k] of ["city","trail"].entries()){const a=String(v[k]||"").split(",").map(x=>x.trim()).filter(Boolean).slice(0,12);if(a.length)lists[i]=a;}s.at=0;},
  render:s=>{const a=visible(s),item=a[s.at%Math.max(a.length,1)],packed=lists[s.trip].filter(x=>s.packed.includes(code(s,x))).length;
  return {title:(s.trip?"Trail":"City")+(s.late?" / door":" / bag"),value:item||"No door items",progress:packed/lists[s.trip].length,
  lines:[item?s.packed.includes(code(s,item))?"Packed":"Still needed":"Empty departure list","Ready "+packed+"/"+lists[s.trip].length,
