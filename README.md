@@ -4,6 +4,20 @@ Pack a trip by context and keep a separate final departure list for items still 
 
 Give the things you still need in the morning their own short list. A charger can stay plugged in overnight and still appear on the departure check, alongside the regular packed count.
 
+## Screen transitions
+
+Follow the selected trip into the packing list and leave the door reminder.
+
+![Runway Bag front display. Follow the selected trip into the packing list and leave the door reminder.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Runway Bag rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
 ## Pack for the selected trip
 
 1. Enter comma-separated items for the city and trail lists in settings. Hold **Start** to choose the trip you are packing for.
@@ -34,6 +48,6 @@ Open BUSY Bar Emulator. From this repository, run:
 
 Press **Back** to exit.
 
-The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
+The GIFs are excerpts from the emulator recording. Each LED occupies a 16 × 16 cell with a black border. The end frames pause for reading.
 
 [Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)

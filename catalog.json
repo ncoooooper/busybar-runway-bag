@@ -2,5 +2,5 @@
   "category": "utilities",
   "short_description": "Pack a trip by context and keep a separate final departure list for items still in use.",
   "description": "Pack a trip by context and keep a separate final departure list for items still in use. The settings define a city and a trail packing list as comma-separated items. Wheel browses items. Click toggles packed. Start marks an item for the moment you leave. Hold the wheel switches to the departure-only view, and hold Start switches trips. Each trip keeps its own marks.",
-  "changelog": "First public version."
+  "changelog": "New screen transitions and high-contrast LED previews."
 }
